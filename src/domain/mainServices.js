@@ -180,7 +180,17 @@ export default {
             },
         });
     },
+    getOrderDetail(data) {
+        return http.post('order-item/success',{order_code: data});
+    },
     getAllOrderItem() {
         return http.get('order/preOrder');
     },
+    getAllOrderSeller() {
+        return http.get('seller/order1',{
+            params: {
+                status: 'all',
+            },
+        });
+    }
 };

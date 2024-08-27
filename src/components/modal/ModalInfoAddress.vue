@@ -96,9 +96,9 @@ const getTotalCost = async () => {
         option => option.value === result.xa
     );
 
-    const label1 = selectedOption1 ? selectedOption1.label : 'Label not found';
-    const label2 = selectedOption2 ? selectedOption2.label : 'Label not found';
-    const label3 = selectedOption3 ? selectedOption3.label : 'Label not found';
+    const label1 = selectedOption1 ? selectedOption1.label : '';
+    const label2 = selectedOption2 ? selectedOption2.label : '';
+    const label3 = selectedOption3 ? selectedOption3.label : '';
 
     const addressInfo = `${result.detail}, ${label3}, ${label2}, ${label1}`;
     try {

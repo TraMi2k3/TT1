@@ -6,7 +6,7 @@ import mainService from '../../../domain/mainServices';
 const route = useRoute();
 const router = useRouter();
 
-const orderCode = route.query.order_code;
+const orderCode = route.query.vnp_TxnRef;
 const getPaymentStatus = async() => {
     try {
         const res = await mainService.getPaymentStatus(orderCode);

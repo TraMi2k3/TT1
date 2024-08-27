@@ -38,6 +38,11 @@ const router = createRouter({
                     component: () => import('../views/customer/Order'),
                 },
                 {
+                    path: '/orderList',
+                    name: 'OrderList',
+                    component: () => import('../views/customer/OrderList'),
+                },
+                {
                     path: '/order/verify',
                     name: 'Verify',
                     component: () => import('../views/customer/Verify'),
@@ -93,12 +98,12 @@ const router = createRouter({
         {
             path: '/login',
             name: 'Login',
-            component: () => import('../views/login'),
+            component: () => import('../views/Login'),
         },
         {
             path: '/register',
             name: 'Register',
-            component: () => import('../views/register'),
+            component: () => import('../views/Register'),
         },
         {
             path: '/seller/profile',
@@ -108,7 +113,7 @@ const router = createRouter({
         {
             path: '/:pathMatch(.*)*',
             name: 'NotFound',
-            component: () => import('../views/notfound'),
+            component: () => import('../views/NotFound'),
         },
         {
             path: '/failPayment',
